@@ -91,9 +91,6 @@ export default function Navbar({ onOpenAuth }) {
                   OFFICIAL
                 </span> */}
               </div>
-              <span className="text-[10px] text-white font-medium tracking-wide">
-                CRICKET COIN ECOSYSTEM
-              </span>
             </div>
           </button>
 

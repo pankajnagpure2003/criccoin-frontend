@@ -21,7 +21,7 @@ const phases = [
       'User profiles',
       'Participation packages',
       'Payment records',
-      'Platform administration',
+      // 'Platform administration',
     ],
   },
   {
@@ -247,7 +247,7 @@ export default function Roadmap() {
                 <h4 className="font-heading text-sm font-bold text-white mb-2">
                   {p.name}
                 </h4>
-                <ul className="space-y-1.5 text-xs text-[#C6C6C6]/80">
+                <ul className="space-y-1.5 text-sm text-[#C6C6C6]/90">
                   {p.items.map((it, i) => (
                     <li key={i} className="flex items-start gap-1.5">
                       <span className="text-[#D4AF37] mt-0.5 font-bold">•</span>
