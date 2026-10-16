@@ -106,12 +106,12 @@ export default function Ecosystem() {
                 onMouseLeave={() => setHoveredIdx(null)}
                 className={`relative rounded-2xl overflow-hidden p-6 transition-colors duration-300 flex flex-col justify-between ${
                   isHovered
-                    ? 'bg-gradient-to-br from-[#201A0D] via-[#14120C] to-[#090908] border-2 border-[#FFD76A]/80 shadow-[0_12px_35px_rgba(212,175,55,0.2)]'
-                    : 'bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-2 border-[#8A6720]/70 hover:border-[#D4AF37]'
+                    ? 'bg-gradient-to-br from-[#201A0D] via-[#14120C] to-[#090908] border-[3px] border-[#FFD76A] shadow-[0_12px_35px_rgba(212,175,55,0.3)]'
+                    : 'bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] hover:border-[#FFD76A]'
                 }`}
               >
                 {/* Visual Thumbnail from mockup */}
-                <div className="relative w-full h-32 rounded-xl overflow-hidden mb-5 bg-[#050606] border-2 border-[#8A6720]/70">
+                <div className="relative w-full h-32 rounded-xl overflow-hidden mb-5 bg-[#050606] border-[3px] border-[#D4AF37]">
                   <img
                     src={card.image}
                     alt={card.title}
@@ -156,7 +156,7 @@ export default function Ecosystem() {
         </motion.div>
 
         {/* Legal Disclaimer Note */}
-        <motion.div {...fadeUp(0.2, 15)} className="mt-10 p-3.5 rounded-xl bg-gradient-to-br from-[#17140B] via-[#100F0B] to-[#080808] border-2 border-[#76591D]/60 text-center">
+        <motion.div {...fadeUp(0.2, 15)} className="mt-10 p-3.5 rounded-xl bg-gradient-to-br from-[#17140B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37]/90 text-center">
           <p className="text-xs text-[#C6C6C6]/70 leading-relaxed">
             Ecosystem features depend on availability, eligibility, and applicable local laws.
           </p>

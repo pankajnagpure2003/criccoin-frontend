@@ -73,7 +73,7 @@ export default function JoinCommunity({ onLogin, onSignup }) {
           <motion.div
             variants={staggerItemVariants(16)}
             whileHover={{ y: -3, transition: { duration: 0.2 } }}
-            className="p-3 rounded-xl bg-gradient-to-br from-[#1A160B]/95 via-[#100F0B]/95 to-[#080808]/95 border-2 border-[#8A6720]/70 backdrop-blur-md"
+            className="p-3 rounded-xl bg-gradient-to-br from-[#1A160B]/95 via-[#100F0B]/95 to-[#080808]/95 border-[3px] border-[#D4AF37] shadow-[0_0_16px_rgba(212,175,55,0.14)] backdrop-blur-md"
           >
             <p className="text-xs text-[#FFD76A] font-bold">Token Dashboard</p>
             <p className="text-[11px] text-[#C6C6C6]">Real-time balances</p>
@@ -81,7 +81,7 @@ export default function JoinCommunity({ onLogin, onSignup }) {
           <motion.div
             variants={staggerItemVariants(16)}
             whileHover={{ y: -3, transition: { duration: 0.2 } }}
-            className="p-3 rounded-xl bg-gradient-to-br from-[#1A160B]/95 via-[#100F0B]/95 to-[#080808]/95 border-2 border-[#8A6720]/70 backdrop-blur-md"
+            className="p-3 rounded-xl bg-gradient-to-br from-[#1A160B]/95 via-[#100F0B]/95 to-[#080808]/95 border-[3px] border-[#D4AF37] shadow-[0_0_16px_rgba(212,175,55,0.14)] backdrop-blur-md"
           >
             <p className="text-xs text-[#FFD76A] font-bold">Holding Status</p>
             <p className="text-[11px] text-[#C6C6C6]">12-Month maturity</p>
@@ -89,7 +89,7 @@ export default function JoinCommunity({ onLogin, onSignup }) {
           <motion.div
             variants={staggerItemVariants(16)}
             whileHover={{ y: -3, transition: { duration: 0.2 } }}
-            className="p-3 rounded-xl bg-gradient-to-br from-[#1A160B]/95 via-[#100F0B]/95 to-[#080808]/95 border-2 border-[#8A6720]/70 backdrop-blur-md"
+            className="p-3 rounded-xl bg-gradient-to-br from-[#1A160B]/95 via-[#100F0B]/95 to-[#080808]/95 border-[3px] border-[#D4AF37] shadow-[0_0_16px_rgba(212,175,55,0.14)] backdrop-blur-md"
           >
             <p className="text-xs text-[#FFD76A] font-bold">10-Level Referral</p>
             <p className="text-[11px] text-[#C6C6C6]">Network tracking</p>
@@ -97,7 +97,7 @@ export default function JoinCommunity({ onLogin, onSignup }) {
           <motion.div
             variants={staggerItemVariants(16)}
             whileHover={{ y: -3, transition: { duration: 0.2 } }}
-            className="p-3 rounded-xl bg-gradient-to-br from-[#1A160B]/95 via-[#100F0B]/95 to-[#080808]/95 border-2 border-[#8A6720]/70 backdrop-blur-md"
+            className="p-3 rounded-xl bg-gradient-to-br from-[#1A160B]/95 via-[#100F0B]/95 to-[#080808]/95 border-[3px] border-[#D4AF37] shadow-[0_0_16px_rgba(212,175,55,0.14)] backdrop-blur-md"
           >
             <p className="text-xs text-[#FFD76A] font-bold">Ecosystem Access</p>
             <p className="text-[11px] text-[#C6C6C6]">Cricket experiences</p>

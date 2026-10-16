@@ -102,7 +102,7 @@ export default function TokenPackages({ onExplore }) {
           
           {/* Column 1: 3D Gold Coin on Pedestal with Red Cricket Ball (3.5 cols) */}
           <motion.div {...slideInLeft(0.1, 24)} className="lg:col-span-4 flex flex-col justify-center">
-            <div className="relative rounded-2xl overflow-hidden border-2 border-[#A17A24]/80 bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] shadow-[0_15px_40px_rgba(0,0,0,0.8),0_0_25px_rgba(212,175,55,0.15)] group h-full flex flex-col">
+            <div className="relative rounded-2xl overflow-hidden border-[3px] border-[#FFD76A]/90 bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] shadow-[0_15px_40px_rgba(0,0,0,0.8),0_0_25px_rgba(212,175,55,0.25)] group h-full flex flex-col">
               
               <div className="relative flex-grow min-h-[260px] overflow-hidden">
                 <img
@@ -164,10 +164,10 @@ export default function TokenPackages({ onExplore }) {
                     onClick={() => handleSelectPackage(pkg.name)}
                     className={`relative p-4 rounded-xl cursor-pointer transition-all duration-300 flex flex-col justify-between ${
                       isSelected
-                        ? 'bg-gradient-to-br from-[#201A0D] via-[#14120C] to-[#090908] border-2 border-[#FFD76A] shadow-[0_4px_25px_rgba(212,175,55,0.25)] -translate-y-0.5'
+                        ? 'bg-gradient-to-br from-[#201A0D] via-[#14120C] to-[#090908] border-[3px] border-[#FFD76A] shadow-[0_4px_25px_rgba(212,175,55,0.3)] -translate-y-0.5'
                         : pkg.highlight
-                        ? 'bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-2 border-[#A17A24]/80 hover:border-[#D4AF37]'
-                        : 'bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-2 border-[#8A6720]/70 hover:border-[#D4AF37]'
+                        ? 'bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] hover:border-[#FFD76A]'
+                        : 'bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] hover:border-[#FFD76A]'
                     }`}
                   >
                     {/* Badge if present */}
@@ -208,7 +208,7 @@ export default function TokenPackages({ onExplore }) {
 
           {/* Column 3: 12-Month Holding Program (3 cols) */}
           <motion.div {...slideInRight(0.15, 24)} className="lg:col-span-3 flex flex-col justify-center">
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] border-2 border-[#8A6720]/70 shadow-xl flex flex-col justify-between h-full">
+            <div className="p-6 rounded-2xl bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] shadow-[0_0_22px_rgba(212,175,55,0.16)] flex flex-col justify-between h-full">
               
               <div>
                 {/* Lock Icon Emblem */}

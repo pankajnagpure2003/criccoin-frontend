@@ -84,7 +84,6 @@ export default function App() {
           {/* 1. Home — Hero Section */}
           <Hero
             onExplore={() => scrollToId('ecosystem')}
-            onJoin={() => handleOpenAuth('signup')}
           />
           <GoldSeparator />
 
@@ -161,4 +160,3 @@ export default function App() {
     </MotionConfig>
   );
 }
-

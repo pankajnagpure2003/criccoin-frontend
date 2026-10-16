@@ -19,7 +19,7 @@ const quickFeatures = [
   { icon: Gamepad2, label: 'Cricket & Digital Experiences' },
 ];
 
-export default function Hero({ onExplore, onJoin }) {
+export default function Hero({ onExplore }) {
   const cursorX = useSpring(0, { stiffness: 90, damping: 22, mass: 0.8 });
   const cursorY = useSpring(0, { stiffness: 90, damping: 22, mass: 0.8 });
   const trailX = useSpring(cursorX, { stiffness: 32, damping: 24, mass: 1.2 });
@@ -177,12 +177,9 @@ export default function Hero({ onExplore, onJoin }) {
                   className="transition-transform duration-300 group-hover:translate-x-1"
                 />
               </button>
-              <button
-                onClick={onJoin}
-                className="btn-secondary"
-              >
+              <a href="#join" className="btn-secondary">
                 Join the Community
-              </button>
+              </a>
             </motion.div>
 
           </div>
@@ -198,7 +195,7 @@ export default function Hero({ onExplore, onJoin }) {
             </div> */}
 
             {/* Clean Authentic Mockup Artwork */}
-            <div className="relative w-full max-w-md rounded-2xl overflow-hidden border-2 border-[#A17A24]/80 shadow-[0_20px_50px_rgba(0,0,0,0.85),0_0_35px_rgba(212,175,55,0.25)] group md:hidden">
+            <div className="relative w-full max-w-md rounded-2xl overflow-hidden border-[3px] border-[#FFD76A]/90 shadow-[0_20px_50px_rgba(0,0,0,0.85),0_0_35px_rgba(212,175,55,0.35)] group md:hidden">
               <picture>
                 <img
                   src={heroPlayerCoinImg}
@@ -237,7 +234,7 @@ export default function Hero({ onExplore, onJoin }) {
               key={label}
               variants={staggerItemVariants(16)}
               whileHover={{ y: -3, transition: { duration: 0.2 } }}
-              className="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-gradient-to-br from-[#1A160B]/95 via-[#100F0B]/95 to-[#080808]/95 border-2 border-[#8A6720]/70 backdrop-blur-md shadow-md hover:border-[#D4AF37] transition-colors"
+              className="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-gradient-to-br from-[#1A160B]/95 via-[#100F0B]/95 to-[#080808]/95 border-[3px] border-[#D4AF37] backdrop-blur-md shadow-md hover:border-[#FFD76A] transition-colors"
             >
               <div className="w-8 h-8 rounded-lg bg-[#D4AF37]/15 border border-[#D4AF37]/35 flex items-center justify-center flex-shrink-0 text-[#FFD76A]">
                 <Icon size={16} />

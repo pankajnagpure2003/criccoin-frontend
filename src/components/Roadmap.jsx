@@ -124,8 +124,8 @@ export default function Roadmap() {
                     onClick={() => setSelectedPhase(idx)}
                     className={`p-3 rounded-xl text-left transition-all duration-200 border flex flex-col justify-between ${
                       isSelected
-                        ? 'bg-gradient-to-br from-[#201A0D] via-[#14120C] to-[#090908] border-2 border-[#FFD76A] shadow-[0_4px_20px_rgba(212,175,55,0.25)]'
-                        : 'bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-2 border-[#8A6720]/70 hover:border-[#D4AF37]'
+                        ? 'bg-gradient-to-br from-[#201A0D] via-[#14120C] to-[#090908] border-[3px] border-[#FFD76A] shadow-[0_4px_20px_rgba(212,175,55,0.3)]'
+                        : 'bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] hover:border-[#FFD76A]'
                     }`}
                   >
                     <div className="flex items-center justify-between mb-1">
@@ -148,7 +148,7 @@ export default function Roadmap() {
             <motion.div
               {...fadeUp(0.15, 20)}
               key={selectedPhase}
-              className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] border-2 border-[#A17A24]/80 shadow-xl relative overflow-hidden"
+              className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] border-[3px] border-[#FFD76A]/90 shadow-[0_0_24px_rgba(212,175,55,0.18)] relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-64 h-64 bg-[radial-gradient(ellipse_at_top_right,rgba(212,175,55,0.1),transparent_70%)] pointer-events-none" />
 
@@ -178,7 +178,7 @@ export default function Roadmap() {
                 {phases[selectedPhase].items.map((item, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-2 border-[#76591D]/70 hover:border-[#D4AF37] transition-colors"
+                    className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37]/90 hover:border-[#FFD76A] transition-colors"
                   >
                     <div className="w-6 h-6 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/30 flex items-center justify-center text-[#FFD76A] flex-shrink-0">
                       <CheckCircle2 size={13} />
@@ -195,7 +195,7 @@ export default function Roadmap() {
 
           {/* Right Column: Golden Trophy Artwork (4 cols) */}
           <motion.div {...slideInRight(0.2, 25)} className="lg:col-span-4 flex items-center justify-center">
-            <div className="relative w-full rounded-2xl overflow-hidden border-2 border-[#A17A24]/80 shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_30px_rgba(212,175,55,0.2)] group aspect-[4/3] sm:aspect-square lg:aspect-[4/5]">
+            <div className="relative w-full rounded-2xl overflow-hidden border-[3px] border-[#FFD76A]/90 shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_30px_rgba(212,175,55,0.3)] group aspect-[4/3] sm:aspect-square lg:aspect-[4/5]">
               <img
                 src={roadmapTrophyImg}
                 alt="CRICCOIN Cricket Championship Gold Trophy"
@@ -236,8 +236,8 @@ export default function Roadmap() {
               whileHover={{ y: -3, transition: { duration: 0.2 } }}
               className={`p-4 rounded-xl border flex flex-col justify-between ${
                 selectedPhase === idx
-                  ? 'bg-gradient-to-br from-[#201A0D] via-[#14120C] to-[#090908] border-2 border-[#FFD76A]/80 shadow-md'
-                  : 'bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-2 border-[#8A6720]/70 hover:border-[#D4AF37]'
+                  ? 'bg-gradient-to-br from-[#201A0D] via-[#14120C] to-[#090908] border-[3px] border-[#FFD76A] shadow-md'
+                  : 'bg-gradient-to-br from-[#19150B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] hover:border-[#FFD76A]'
               }`}
             >
               <div className="mb-3">
@@ -264,7 +264,7 @@ export default function Roadmap() {
         </motion.div>
 
         {/* Legal Disclaimer Note */}
-        <motion.div {...fadeUp(0.2, 15)} className="p-3.5 rounded-xl bg-gradient-to-br from-[#17140B] via-[#100F0B] to-[#080808] border-2 border-[#76591D]/60 text-center">
+        <motion.div {...fadeUp(0.2, 15)} className="p-3.5 rounded-xl bg-gradient-to-br from-[#17140B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37]/90 text-center">
           <p className="text-xs text-[#C6C6C6]/70 leading-relaxed">
             This roadmap represents a proposed implementation sequence. Features and launch dates remain subject to approval and development readiness.
           </p>

@@ -57,7 +57,7 @@ export default function About() {
               <motion.div
                 variants={staggerItemVariants(18)}
                 whileHover={{ y: -4, transition: { duration: 0.25 } }}
-                className="p-4 rounded-xl bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] border-2 border-[#8A6720]/70 hover:border-[#D4AF37] transition-colors"
+                className="p-4 rounded-xl bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] hover:border-[#FFD76A] shadow-[0_0_18px_rgba(212,175,55,0.12)] transition-colors"
               >
                 <div className="w-8 h-8 rounded-lg bg-[#D4AF37]/15 flex items-center justify-center text-[#FFD76A] mb-3">
                   <ShieldCheck size={18} />
@@ -73,7 +73,7 @@ export default function About() {
               <motion.div
                 variants={staggerItemVariants(18)}
                 whileHover={{ y: -4, transition: { duration: 0.25 } }}
-                className="p-4 rounded-xl bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] border-2 border-[#8A6720]/70 hover:border-[#D4AF37] transition-colors"
+                className="p-4 rounded-xl bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] hover:border-[#FFD76A] shadow-[0_0_18px_rgba(212,175,55,0.12)] transition-colors"
               >
                 <div className="w-8 h-8 rounded-lg bg-[#D4AF37]/15 flex items-center justify-center text-[#FFD76A] mb-3">
                   <Globe2 size={18} />
@@ -89,7 +89,7 @@ export default function About() {
               <motion.div
                 variants={staggerItemVariants(18)}
                 whileHover={{ y: -4, transition: { duration: 0.25 } }}
-                className="p-4 rounded-xl bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] border-2 border-[#8A6720]/70 hover:border-[#D4AF37] transition-colors"
+                className="p-4 rounded-xl bg-gradient-to-br from-[#1A160B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] hover:border-[#FFD76A] shadow-[0_0_18px_rgba(212,175,55,0.12)] transition-colors"
               >
                 <div className="w-8 h-8 rounded-lg bg-[#D4AF37]/15 flex items-center justify-center text-[#FFD76A] mb-3">
                   <Zap size={18} />
@@ -106,7 +106,7 @@ export default function About() {
 
           {/* Right Column: Mission Card with Stadium Pitch Backdrop (5 cols) */}
           <motion.div {...slideInRight(0.15, 28)} className="lg:col-span-5 flex items-center">
-            <div className="relative w-full rounded-2xl overflow-hidden border-2 border-[#A17A24]/80 shadow-[0_20px_50px_rgba(0,0,0,0.85),0_0_30px_rgba(212,175,55,0.2)] group">
+            <div className="relative w-full rounded-2xl overflow-hidden border-[3px] border-[#FFD76A]/90 shadow-[0_20px_50px_rgba(0,0,0,0.85),0_0_30px_rgba(212,175,55,0.3)] group">
               
               {/* Stadium Background Photo covering the card */}
               <div className="absolute inset-0 z-0">
@@ -125,7 +125,7 @@ export default function About() {
 
               {/* Mission Content overlay */}
               
-<div className="relative z-10 p-5 sm:p-7 flex flex-col justify-end min-h-[360px]">
+<div className="relative z-10 p-5 sm:p-7 flex flex-col justify-end min-h-[440px] sm:min-h-[500px]">
 
   <div>
     {/* Compact Top Badge */}

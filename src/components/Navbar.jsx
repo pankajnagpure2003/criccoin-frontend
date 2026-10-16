@@ -62,8 +62,8 @@ export default function Navbar({ onOpenAuth }) {
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#050606]/95 backdrop-blur-xl border-b border-[#D4AF37]/25 shadow-xl shadow-black/80 py-3'
-          : 'bg-[#050606]/60 backdrop-blur-md border-b border-white/5 py-4'
+          ? 'bg-[#050606]/95 backdrop-blur-xl border-b-2 border-[#D4AF37]/90 shadow-xl shadow-black/80 py-3'
+          : 'bg-[#050606]/60 backdrop-blur-md border-b-2 border-[#D4AF37]/70 py-4'
       }`}
     >
       <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -100,7 +100,7 @@ export default function Navbar({ onOpenAuth }) {
 
           {/* Desktop Navigation Capsule */}
           <nav className="hidden lg:flex items-center">
-            <div className="flex items-center gap-1 px-4 py-1.5 rounded-full bg-black/50 backdrop-blur-md border border-[#D4AF37]/25 shadow-inner">
+            <div className="flex items-center gap-1 px-4 py-1.5 rounded-full bg-gradient-to-r from-[#17140B]/95 via-black/90 to-[#17140B]/95 backdrop-blur-md border-2 border-[#D4AF37] shadow-[0_0_18px_rgba(212,175,55,0.18)]">
               {navLinks.map((link) => {
                 const isActive = activeSection === link.href.replace('#', '');
                 return (
@@ -116,7 +116,7 @@ export default function Navbar({ onOpenAuth }) {
                     {isActive && (
                       <motion.div
                         layoutId="activeNavPill"
-                        className="absolute inset-0 rounded-full bg-gradient-to-r from-[#D4AF37]/20 to-[#FFD76A]/10 border border-[#D4AF37]/40"
+                        className="absolute inset-0 rounded-full bg-gradient-to-r from-[#D4AF37]/25 to-[#FFD76A]/15 border-2 border-[#FFD76A]/90"
                         transition={{ type: 'spring', stiffness: 350, damping: 30 }}
                       />
                     )}
@@ -131,13 +131,13 @@ export default function Navbar({ onOpenAuth }) {
           <div className="hidden lg:flex items-center gap-3">
             <button
               onClick={() => handleAuthClick('login')}
-              className="btn-secondary !py-2 !px-5 !text-xs !font-semibold"
+              className="btn-secondary !py-2 !px-5 !text-xs !font-semibold !border-2 !border-[#D4AF37] hover:!border-[#FFD76A]"
             >
               Login
             </button>
             <button
               onClick={() => handleAuthClick('signup')}
-              className="btn-primary !py-2 !px-5 !text-xs !font-bold flex items-center gap-1.5"
+              className="btn-primary !py-2 !px-5 !text-xs !font-bold !border-2 !border-[#FFD76A] flex items-center gap-1.5"
             >
               {/* <Sparkles size={13} className="text-black" /> */}
               Sign Up
@@ -148,13 +148,13 @@ export default function Navbar({ onOpenAuth }) {
           <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={() => handleAuthClick('signup')}
-              className="btn-primary !py-1.5 !px-3.5 !text-xs !font-bold"
+              className="btn-primary !py-1.5 !px-3.5 !text-xs !font-bold !border-2 !border-[#FFD76A]"
             >
               Sign Up
             </button>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="w-10 h-10 rounded-full bg-white/5 border border-[#D4AF37]/30 flex items-center justify-center text-[#FFD76A] hover:bg-white/10 transition-colors focus:outline-none"
+              className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1A160B] to-[#080808] border-2 border-[#D4AF37] flex items-center justify-center text-[#FFD76A] hover:border-[#FFD76A] hover:bg-[#D4AF37]/15 transition-colors focus:outline-none"
               aria-label={mobileOpen ? 'Close Navigation' : 'Open Navigation'}
             >
               {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -171,7 +171,7 @@ export default function Navbar({ onOpenAuth }) {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="lg:hidden border-t border-[#D4AF37]/20 bg-[#050606]/98 backdrop-blur-2xl px-5 pt-4 pb-6 overflow-hidden shadow-2xl"
+            className="lg:hidden border-t-2 border-[#D4AF37]/80 bg-[#050606]/98 backdrop-blur-2xl px-5 pt-4 pb-6 overflow-hidden shadow-2xl"
           >
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => {
@@ -182,7 +182,7 @@ export default function Navbar({ onOpenAuth }) {
                     onClick={() => scrollTo(link.href)}
                     className={`flex items-center justify-between py-2.5 px-4 rounded-xl text-left text-sm font-medium transition-all ${
                       isActive
-                        ? 'bg-[#D4AF37]/15 text-[#FFD76A] border border-[#D4AF37]/30 font-semibold'
+                        ? 'bg-gradient-to-r from-[#1A160B] to-[#0A0907] text-[#FFD76A] border-2 border-[#FFD76A]/90 font-semibold'
                         : 'text-[#C6C6C6] hover:bg-white/5 hover:text-white'
                     }`}
                   >
@@ -195,13 +195,13 @@ export default function Navbar({ onOpenAuth }) {
               <div className="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-white/10">
                 <button
                   onClick={() => handleAuthClick('login')}
-                  className="btn-secondary !w-full !py-2.5 !text-xs !justify-center"
+                  className="btn-secondary !w-full !py-2.5 !text-xs !justify-center !border-2 !border-[#D4AF37]"
                 >
                   Login
                 </button>
                 <button
                   onClick={() => handleAuthClick('signup')}
-                  className="btn-primary !w-full !py-2.5 !text-xs !justify-center !font-bold"
+                  className="btn-primary !w-full !py-2.5 !text-xs !justify-center !font-bold !border-2 !border-[#FFD76A]"
                 >
                   Sign Up
                 </button>
