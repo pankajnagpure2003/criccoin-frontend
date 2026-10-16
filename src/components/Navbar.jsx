@@ -116,7 +116,7 @@ export default function Navbar({ onOpenAuth }) {
                     {isActive && (
                       <motion.div
                         layoutId="activeNavPill"
-                        className="absolute inset-0 rounded-full bg-gradient-to-r from-[#D4AF37]/25 to-[#FFD76A]/15 border-2 border-[#FFD76A]/90"
+                        className="absolute inset-0 rounded-full bg-gradient-to-r from-[#D4AF37]/25 to-[#FFD76A]/15 border border-[#FFD76A]/90"
                         transition={{ type: 'spring', stiffness: 350, damping: 30 }}
                       />
                     )}

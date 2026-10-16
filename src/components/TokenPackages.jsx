@@ -91,7 +91,7 @@ export default function TokenPackages({ onExplore }) {
         <motion.h2 {...fadeUp(0.08, 20)} className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-3">
           Discover the <span className="gold-gradient-text">CRICCOIN Token</span>
         </motion.h2>
-        <motion.p {...fadeUp(0.16, 18)} className="text-sm sm:text-base text-[#C6C6C6] mb-12 max-w-3xl leading-relaxed">
+        <motion.p {...fadeUp(0.16, 18)} className="text-justify text-sm sm:text-base text-[#C6C6C6] mb-12 max-w-3xl leading-relaxed">
           A digital token at the heart of a connected cricket ecosystem. Designed to support
           digital participation, token balance tracking, and approved ecosystem experiences.
           The platform provides transparent records of token allocations, transactions, and holding positions.

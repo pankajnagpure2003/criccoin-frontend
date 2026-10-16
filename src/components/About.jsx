@@ -34,13 +34,13 @@ export default function About() {
               <span className="gold-gradient-text">Cricket Communities</span>
             </motion.h2>
 
-            <motion.p {...fadeUp(0.16, 18)} className="text-base sm:text-lg text-[#C6C6C6] leading-relaxed mb-5">
+            <motion.p {...fadeUp(0.16, 18)} className="text-justify text-base sm:text-lg text-[#C6C6C6] leading-relaxed mb-5">
               CRICCOIN aims to connect cricket enthusiasts through a digital ecosystem
               combining token management, community participation, referral networking,
               leadership development, and cricket-focused experiences.
             </motion.p>
 
-            <motion.p {...fadeUp(0.24, 18)} className="text-sm sm:text-base text-[#C6C6C6]/90 leading-relaxed mb-8">
+            <motion.p {...fadeUp(0.24, 18)} className="text-justify text-sm sm:text-base text-[#C6C6C6]/90 leading-relaxed mb-8">
               Our vision is to create an accessible and transparent platform where users
               can explore digital participation while staying connected to the global
               cricket community.

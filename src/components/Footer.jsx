@@ -41,14 +41,14 @@ export default function Footer({ onOpenLegal, onScrollTo }) {
   };
 
   return (
-    <footer className="relative bg-[#050606] border-t border-[#D4AF37]/25 pt-16 pb-12 overflow-hidden">
+    <footer className="relative bg-[#050606] border-t-[3px] border-[#FFD76A] pt-16 pb-12 overflow-hidden">
       {/* Ambient background gold glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[250px] bg-[#D4AF37]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b-2 border-[#D4AF37]/70">
           
           {/* Brand & Slogan Column (5 cols) */}
           <motion.div {...fadeUp(0, 20)} className="lg:col-span-5 flex flex-col justify-between">
@@ -137,7 +137,7 @@ export default function Footer({ onOpenLegal, onScrollTo }) {
                     e.preventDefault();
                     alert(`${social.name} community channel launching soon.`);
                   }}
-                  className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] transition-all duration-300 hover:-translate-y-1 hover:border-current hover:bg-white/[0.08] hover:shadow-[0_0_18px_currentColor]"
+                  className="group flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#D4AF37]/80 bg-white/[0.04] transition-all duration-300 hover:-translate-y-1 hover:border-[#FFD76A] hover:bg-white/[0.08] hover:shadow-[0_0_18px_currentColor]"
                   style={{ color: social.color }}
                 >
                   <svg
@@ -157,7 +157,7 @@ export default function Footer({ onOpenLegal, onScrollTo }) {
 
           {/* Quick Links Column (3 cols) */}
           <motion.div {...fadeUp(0.1, 20)} className="lg:col-span-3">
-            <h4 className="font-heading text-xs font-bold uppercase tracking-widest text-white mb-4 flex items-center gap-2">
+            <h4 className="font-heading text-xs font-bold uppercase tracking-widest text-[#FFD76A] mb-4 flex items-center gap-2">
               {/* <Sparkles size={13} className="text-[#D4AF37]" /> */}
               Quick Links
             </h4>
@@ -176,7 +176,7 @@ export default function Footer({ onOpenLegal, onScrollTo }) {
 
           {/* Legal Column (4 cols) */}
           <motion.div {...fadeUp(0.18, 20)} className="lg:col-span-4">
-            <h4 className="font-heading text-xs font-bold uppercase tracking-widest text-white mb-4">
+            <h4 className="font-heading text-xs font-bold uppercase tracking-widest text-[#FFD76A] mb-4">
               Legal & Disclosures
             </h4>
             <div className="space-y-2 mb-6">
@@ -191,7 +191,7 @@ export default function Footer({ onOpenLegal, onScrollTo }) {
               ))}
             </div>
 
-            <div className="p-3 rounded-xl bg-white/[0.02] border border-[#D4AF37]/20 text-[11px] text-[#C6C6C6]/80 leading-relaxed">
+            <div className="p-3 rounded-xl bg-gradient-to-br from-[#17140B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] text-[11px] text-[#C6C6C6]/80 leading-relaxed">
               Official launch parameters, KYC verification standards, and approved local permissions apply.
             </div>
           </motion.div>
@@ -199,7 +199,7 @@ export default function Footer({ onOpenLegal, onScrollTo }) {
         </div>
 
         {/* Full Legal Disclaimer Box */}
-        <motion.div {...fadeUp(0.2, 16)} className="my-8 p-4 rounded-xl bg-gradient-to-r from-[#10100E] to-[#0A0A09] border border-[#D4AF37]/25 shadow-inner">
+        <motion.div {...fadeUp(0.2, 16)} className="my-8 p-4 rounded-xl bg-gradient-to-br from-[#17140B] via-[#100F0B] to-[#080808] border-[3px] border-[#D4AF37] shadow-[0_0_20px_rgba(212,175,55,0.14)]">
           <p className="text-xs text-[#C6C6C6]/85 leading-relaxed text-center sm:text-left">
             <strong className="text-[#FFD76A] font-semibold">Disclaimer: </strong>
             CRICCOIN is a proposed digital ecosystem. Token prices may fluctuate, and token ownership
@@ -218,7 +218,7 @@ export default function Footer({ onOpenLegal, onScrollTo }) {
             <span>Play · Participate · Build</span>
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-[#D4AF37]/30 text-[#FFD76A] hover:bg-[#D4AF37]/20 transition-all text-[11px] font-semibold"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-br from-[#1A160B] to-[#080808] border-2 border-[#FFD76A] text-[#FFD76A] hover:bg-[#D4AF37]/20 transition-all text-[11px] font-semibold"
             >
               <span>Back to Top</span>
               <ArrowUp size={12} />

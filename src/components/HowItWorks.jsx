@@ -113,7 +113,7 @@ export default function HowItWorks() {
                   transition={{ duration: 0.45, delay: 0.04, ease: [0.22, 1, 0.36, 1] }}
                   whileHover={{ y: -3, transition: { duration: 0.2 } }}
                   whileTap={{ scale: 0.99 }}
-                  className={`group relative col-start-2 row-start-1 flex min-h-[175px] w-full flex-col overflow-hidden rounded-2xl border-[3px] p-4 text-left transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FFD76A] sm:min-h-[185px] sm:p-5 md:max-w-[360px] ${
+                  className={`group relative col-start-2 row-start-1 flex min-h-[175px] w-full flex-col overflow-hidden rounded-2xl border-[3px] p-4 text-left transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FFD76A] sm:min-h-[185px] sm:p-5 md:max-w-[420px] ${
                     appearsOnLeft
                       ? 'md:col-start-1 md:justify-self-end'
                       : 'md:col-start-3 md:justify-self-start'
