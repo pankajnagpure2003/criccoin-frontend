@@ -74,14 +74,13 @@ export default function Navbar({ onOpenAuth }) {
             className="flex items-center gap-2.5 text-left group focus:outline-none"
             aria-label="CRICCOIN Home"
           >
-            <div className="relative w-10 h-10 sm:w-11 sm:h-11 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+            <div className="relative w-8 h-8 sm:w-11 sm:h-11 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
               <div className="absolute inset-0 rounded-full bg-[#D4AF37]/20 blur-md group-hover:bg-[#FFD76A]/30 transition-colors" />
-            
-<img
-  src={logoImg}
-  alt="CRICCOIN Logo"
-  className="relative w-full h-full object-contain scale-200 filter drop-shadow-[0_2px_8px_rgba(212,175,55,0.4)]"
-/>
+              <img
+                src={logoImg}
+                alt="CRICCOIN Logo"
+                className="relative w-full h-full object-contain scale-200 filter drop-shadow-[0_2px_8px_rgba(212,175,55,0.4)]"
+              />
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1">

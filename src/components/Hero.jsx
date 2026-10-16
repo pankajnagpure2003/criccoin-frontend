@@ -62,7 +62,7 @@ export default function Hero({ onExplore }) {
           loop
           playsInline
           aria-hidden="true"
-          className="hidden md:block absolute inset-0 w-full h-full object-cover object-center md:object-[center_55%]"
+          className="hidden md:block absolute inset-0 w-full h-full object-cover object-center md:object-[60%_55%]"
         />
         {/* Dark Obsidian & Gold Gradients */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#050606] via-[#050606]/92 to-[#050606]/75 md:from-[#050606]/70 md:via-[#050606]/25 md:to-[#050606]/15" />
@@ -159,10 +159,15 @@ export default function Hero({ onExplore }) {
             </motion.h1>
 
             {/* Description */}
-            <motion.p {...fadeUp(0.25, 20)} className="text-base sm:text-lg text-[#C6C6C6] leading-relaxed mb-8 max-w-xl font-normal">
-              Discover CRICCOIN, a cricket-focused digital ecosystem designed to bring
-              together token participation, community building, referral connections,
-              and digital cricket experiences.
+            <motion.p {...fadeUp(0.25, 20)} className="mx-auto mb-7 max-w-[34rem] text-pretty text-xs font-normal leading-5 text-[#D0D0D0] sm:mb-8 sm:text-lg sm:leading-relaxed lg:mx-0 lg:text-left">
+              <span className="block sm:hidden">Discover CRICCOIN, a cricket-focused digital ecosystem designed</span>
+              <span className="block sm:hidden">to bring together token participation, community building,</span>
+              <span className="block sm:hidden">referral connections, and digital cricket experiences.</span>
+              <span className="hidden sm:inline">
+                Discover CRICCOIN, a cricket-focused digital ecosystem designed to bring
+                together token participation, community building, referral connections,
+                and digital cricket experiences.
+              </span>
             </motion.p>
 
             {/* Action Buttons */}
